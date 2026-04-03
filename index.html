@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estación Arcade</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Estación Arcade</h1>
+            <p>Los mejores videojuegos, trailers y novedades en un solo lugar</p>
+            <a href="#catalogo" class="btn-principal">Ver catálogo</a>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="#catalogo">Videojuegos</a>
+        <a href="#trailers">Trailers</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="catalogo" class="seccion">
+            <h2>JUEGOS EN VENTA</h2>
+            <div class="contenedor-juegos">
+
+                <article class="card">
+                    <img src="imagenes/elden ring.avif" alt="Elden Ring">
+                    <h3>Elden Ring</h3>
+                    <p>Un juego de accion donde la historia y dificultad te pondran a prueba</p>
+                </article>
+
+                <article class="card">
+                    <img src="imagenes/godofwar.avif" alt="God of War Ragnarok">
+                    <h3>God of War Ragnarok</h3>
+                    <p>Un juego donde la historia de el Fantasma de Esparta y su hijo te atrapara</p>
+                </article>
+
+                <article class="card">
+                    <img src="imagenes/deltarune.jpg" alt="Deltarune">
+                    <h3>Deltarune</h3>
+                    <p>Una aventura única creada por Toby Fox, llena de misterio, humor y decisiones.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="trailers" class="seccion trailers">
+            <h2>Trailers</h2>
+            <div class="contenedor-videos">
+
+                <div class="video-card">
+                    <h3>Elden Ring trailer</h3>
+                    <video controls>
+                        <source src="videos/[Español] ELDEN RING - Story Trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <h3>God of War Ragnarok trailer</h3>
+                    <video controls>
+                        <source src="videos/God Of War Ragnarok - Reveal Trailer - Voces en Español  _ PS5.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-card">
+                    <h3>Deltarune trailer</h3>
+                    <iframe width="100%" height="400"
+                        src="https://www.youtube.com/embed/CN4ZcGJoZac"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion contacto">
+            <h2>Formulario de contacto</h2>
+
+            <form action="resp-Form.html" method="get" class="formulario">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        required 
+                        minlength="3">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="correo">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo" 
+                        required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="asunto">Asunto</label>
+                    <input 
+                        type="text" 
+                        id="asunto" 
+                        name="asunto" 
+                        required 
+                        minlength="5">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        rows="5" 
+                        required 
+                        minlength="10"></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar formulario</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
