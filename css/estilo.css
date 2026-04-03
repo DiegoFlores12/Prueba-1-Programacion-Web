@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0b1f1a;
+    color: #e0f2ef;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url("../imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #00ffae;
+}
+
+.hero p {
+    margin: 10px 0;
+    color: #b2dfdb;
+}
+
+.btn-principal {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00c896;
+    color: #001f1a;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #00ffae;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #062c24;
+    padding: 10px;
+}
+
+.menu a {
+    color: #00ffae;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.seccion {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion h2 {
+    margin-bottom: 20px;
+    color: #00ffae;
+}
+
+.contenedor-juegos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #0f3d33;
+    border-radius: 12px;
+    width: 250px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #00ffae;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffae;
+}
+
+.contenedor-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #0f3d33;
+    padding: 15px;
+    border-radius: 12px;
+    width: 320px;
+}
+
+.video-card h3 {
+    margin-bottom: 10px;
+    color: #00ffae;
+}
+
+video, iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    background-color: #0f3d33;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.grupo-formulario {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #00c896;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background-color: #00ffae;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-juegos,
+    .contenedor-videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
